@@ -1,0 +1,16 @@
+Auto-Sub BootstrapBill Docker
+=============================
+
+Easy-to-use and lightweight Docker container running Auto-Sub BootstrapBill.
+
+You probably want to mount two files and one directory:
+* Configuration file: config.properties
+* Database file: database.db
+* Your series directory: /my/series
+
+## Usage
+
+`docker run -d -p 8083:8083 --restart=unless-stopped -v /my/config.properties:/opt/autosub-bootstrapbill-master/config.properties -v /my/database.db:/opt/autosub-bootstrapbill-master/database.db -v /my/series:/series autosub-bootstrapbill`
+
+Have fun!
+
