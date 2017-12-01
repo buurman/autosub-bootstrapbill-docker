@@ -8,7 +8,8 @@ RUN wget https://github.com/BenjV/autosub/archive/master.zip && \
 
 RUN pip install cheetah
 
-EXPOSE 8084
+EXPOSE 8083
+EXPOSE 9960
 
 WORKDIR /opt/autosub-master
 
